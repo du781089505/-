@@ -32,5 +32,18 @@ $(function(){
 					
 			}
 	
-       
+         if ($(".wwindexbanner").length > 0) {
+        var mySwiper = new Swiper('.wwindexbanner', {
+            loop: true,
+            autoplay: 5000,
+            speed: 1000,
+            pagination: '.wwindexbannerbtn',
+            paginationClickable: true,
+            autoplayDisableOnInteraction: false,
+            grabCursor: false,
+            parallax: true
+
+        });
+
+    };
 })
