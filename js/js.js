@@ -46,4 +46,25 @@ $(function(){
         });
 
     };
+     var swiper = new Swiper('.wwinnoleftdiv', {
+        pagination: '',
+        nextButton: '.wwinnoleftdiv .wwinprodivright',
+        prevButton: '.wwinnoleftdiv .wwinprodivleft',
+        paginationClickable: true,
+        slidesPerView: 1,
+        spaceBetween: 0,
+		autoplay:3000,
+		autoplayDisableOnInteraction:false,
+        breakpoints: {
+            991: {
+                slidesPerView: 1,
+                spaceBetween: 0
+            },
+            640: {
+                slidesPerView: 1,
+                spaceBetween: 0
+            }
+
+        }
+    });
 })
